@@ -56,15 +56,13 @@ with open(file_to_save,"w") as txt_file:
         f"Total Votes: {total_votes:,}\n"
         f"-----------------------------\n")
     print(election_results,end="")
-    #save the final vote count to text file
     txt_file.write(election_results)
-    
-    #print candidate list
-    print(candidate_options)
-    #print candidate votes
-    print(candidate_votes)
+    # #print candidate list
+    # print(candidate_options)
+    # #print candidate votes
+    # print(candidate_votes)
 
-    #itermate through candidate list
+    #iterate through candidate list
     #retrieive vote count of candidate
 
     #calculate percentage of votes
@@ -73,9 +71,13 @@ with open(file_to_save,"w") as txt_file:
     for i in candidate_votes:
         votes=candidate_votes[i]
         vote_percentage=float(votes)/float(total_votes)*100
-    #    print(f"{i}: received {vote_percentage:.1f} % of the vote.")
-    #    print(votes)
-    # #print(total_votes)
+        #create variable for all candidate results
+        candidate_results=(f"{i}:  {vote_percentage:.1f}%   ({votes:,})\n")
+        #print each candidate's results to terminal
+        print(candidate_results)
+        #save results to text file
+        txt_file.write(candidate_results)
+
         #determine winning vote count, winning percentage, and candidiate
         if (votes>winning_count) and (vote_percentage>winning_percentage):
             winning_count=votes
@@ -83,42 +85,11 @@ with open(file_to_save,"w") as txt_file:
             winning_percentage=vote_percentage
     #print winning candidate results to terminal
     winning_candidate_summary=(
-    f"----------------------------\n"
+    f"-----------------------------\n"
     f"Winner: {winning_candidate}\n"
     f"Winning Vote Count: {winning_count:,}\n"
     f"Winning Percentage: {winning_percentage:.1f}%\n"
-    f"----------------------------\n")
-    #print(winning_candidate_summary)
-
-
-
-
-
-# #create file name variable to a direct or indirect path to file unknown file path open file to write
-# file_to_save=os.path.join("analysis","election_analysis.txt")
-# #use open function with w to write to the file
-# outfile=open(file_to_save,"w")
-# #add Hello World to election_analysis.txt
-# outfile.write("Hello World")
-# #close the file
-# outfile.close()
-
-
-# #CLEANER VERSION create a filename variable to a direct or indirect path to the file
-# file_to_save=os.path.join("analysis","election_analysis.txt")
-# #using the with statement open the file a text file
-# with open(file_to_save,"w") as txt_file:
-#     #Wite some data to the file
-#     txt_file.write("Counties in the Election\n\nArapahoe\nDenver\nJefferson\n")
-
-
-
-#determine total number of votes cast
-#determine a list of all cnaidiates who received votes
-#determine Total number of votes each candidate received
-#calculate Percentage of votes each candidate won
-#announce The winner of the election based on popular vote
-
-##close the file
-#election_data.close()
-
+    f"-----------------------------\n")
+    print(winning_candidate_summary)
+    # Save the winning candidate's name to the text file.
+    txt_file.write(winning_candidate_summary)
