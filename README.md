@@ -34,7 +34,6 @@ The desired information was printed to the Terminal and written into a txt file 
      * 369,711 were cast in this election
 * Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
      * 3 counties participated in this election.  Denver County had 306,055 votes which made up 83% of the vote.  Jefferson County had 38,555 votes (10%) and Arapahoe County had 24,801 votes (7%).
-     * These numbers were determined using a for loop and an if statement to fill a dictionary with data and then extract it out.  You can see this in Rows 43 to 46 of the code linked in the Reference section.  
 * Which county had the largest number of votes?
      * Denver County had the largest number of votes.
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
