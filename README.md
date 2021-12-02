@@ -50,6 +50,7 @@ Tom was able to print all results to a txt file.  Image of the txt file is below
 As you can see from the description in the Analysis section this script could be used for other elections as long as you have a CSV file generated with BallotID, County, and Candidate.  The following information could be extracted from this script without any edits to the CSV file format but with additional code.  Additional for loops and if statements would be necessary but the following could be interesting information to spot trends:
 1. candidate votes by county
 2. % candidate votes by county
+This information could be usedful to understand which counties supported which candidiates.  
 
 Additionally, if more data was to be collected (i.e. type of vote - mail in, punch card, or electronic) and added to the CSV file this data could be easily analyzed using a similar methodology to see how the type of votes break out by county and candidate.
 
