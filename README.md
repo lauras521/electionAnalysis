@@ -32,8 +32,6 @@ The desired information was printed to the Terminal and written into a txt file 
 ###
 * How many votes were cast in this congressional election?
      * 369,711 were cast in this election
-     * This number was determined in a for loop using an iterator to go through all line items in the CSV file and indexing by one each time until it got to the end of the list of ballot IDs.  You can see this in Rows 43 to 46 of the code linked in the Reference section.  
- &emsp; A fo
 * Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
      * 3 counties participated in this election.  Denver County had 306,055 votes which made up 83% of the vote.  Jefferson County had 38,555 votes (10%) and Arapahoe County had 24,801 votes (7%).
      * These numbers were determined using a for loop and an if statment to fill a dictionary with data and then extract it out.  You can see this in Rows 43 to 46 of the code linked in the Reference section.  
@@ -49,9 +47,12 @@ Tom was able to print all results to a txt file.  Image of the txt file is below
   <img src = https://github.com/lauras521/electionAnalysis/blob/a9b747fb9a63f605f4b5e0dfd0ee3afbdacc8665/Resources/Image_of_Analysis_for_Readme.PNG>
 </p>
 
-
 ## Election Audit Summary
-If election audits 
+As you can see from the description in the Analysis section this script could be used for other elections as long as you have a CSV file generated with BallotID, County, and Candidate.  The following information could be extracted from this script without any edits to the CSV file format but with additional code.  Additional for loops and if statements would be necessary but the following could be interesting information to spot trends:
+1. candidate votes by county
+2. % candidate votes by county
+
+Additionally, if more data was to be collected (i.e. type of vote - mail in, punch card, or electronic) and added to the CSV file this data could be easily analyzed using a similar methodology to see how the type of votes break out by county and candidate.
 
 ## References
 **Python Code Images**
