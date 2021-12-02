@@ -1,8 +1,8 @@
-# Election Analysis for a US Congressional Precint in Colorado
+# Election Analysis for a US Congressional Precinct in Colorado
 ## Overview
 Tom is a Colorado Board of Elections employee who has been tasked with auditing recent election results.  While this task could be done in Excel, the goal is to create a Python script to be able to automate and widely apply the methodology to other elections in the future.  A CSV file was provided to Tom showing the Ballot ID, county, and candidate for all mail-in, punch card, and direct recording electronic machine votes in the district.  Tom's goal is to find the following information:
 1. election winner
-2. vote % and number of votes for each candidiate
+2. vote % and number of votes for each candidate
 3. vote % and number of votes for each county  
 
 <p align="center">
@@ -34,7 +34,7 @@ The desired information was printed to the Terminal and written into a txt file 
      * 369,711 were cast in this election
 * Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
      * 3 counties participated in this election.  Denver County had 306,055 votes which made up 83% of the vote.  Jefferson County had 38,555 votes (10%) and Arapahoe County had 24,801 votes (7%).
-     * These numbers were determined using a for loop and an if statment to fill a dictionary with data and then extract it out.  You can see this in Rows 43 to 46 of the code linked in the Reference section.  
+     * These numbers were determined using a for loop and an if statement to fill a dictionary with data and then extract it out.  You can see this in Rows 43 to 46 of the code linked in the Reference section.  
 * Which county had the largest number of votes?
      * Denver County had the largest number of votes.
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
@@ -58,7 +58,7 @@ Additionally, if more data was to be collected (i.e. type of vote - mail in, pun
 **Python Code Images**
 <img src = https://github.com/lauras521/electionAnalysis/blob/896e7e77814a17852636b4c91c018521a2d22829/Resources/code_image_1.PNG>
 <img src = https://github.com/lauras521/electionAnalysis/blob/896e7e77814a17852636b4c91c018521a2d22829/Resources/code_image_2.PNG>
-<img src = https://github.com/lauras521/electionAnalysis/blob/896e7e77814a17852636b4c91c018521a2d22829/Resources/code_image_3.PNG>
+<img src = https://github.com/lauras521/electionAnalysis/blob/e2a3ec5871d08f7ba860dc9e74f7b0933aa4d9ea/Resources/code_image_4.PNG>
 
 
 **Python Code Linked**
